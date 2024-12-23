@@ -92,7 +92,7 @@ export default function RegisterPage() {
                 <FormMessage />
               </FormItem>
             )} />
-            <Button type="submit" isLoading={isLoading}>
+            <Button type="submit" >
               Register
             </Button>
           </form>
