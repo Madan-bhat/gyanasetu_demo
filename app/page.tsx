@@ -8,13 +8,17 @@ export const metadata: Metadata = {
   description: "A comprehensive school management system",
 }
 
-const FeatureCard = ({ icon: Icon, title, description }) => (
+const FeatureCard = ({ icon, title, description }:any) => 
+  {
+  let Icon=icon;
+
+  return(
   <div className="flex flex-col items-center p-6 bg-white/5 rounded-lg backdrop-blur-sm border border-gray-200/10 hover:border-gray-200/20 transition-all">
     <Icon className="h-12 w-12 mb-4 text-white" />
     <h3 className="text-xl font-semibold mb-2">{title}</h3>
     <p className="text-gray-400 text-center">{description}</p>
   </div>
-)
+)}
 
 export default function Home() {
   return (
